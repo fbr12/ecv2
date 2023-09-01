@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap');
+body{
+    background-color: #222;
+}
+section{
+    padding-top: 4em;
+}
+div.top{
+    display: flex;
+    top: 0px;
+    background-color: #222;
+}
+div.procart{
+    display: flex;
+    margin-left: auto;
+    padding-top: 1em;
+    padding-right: 1em;
+}
+h2{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+.container{
+    display: grid;
+    width: 23em;
+    height: 27em;
+    color: white;
+}
+.info{
+    position: relative;
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 15px 15px 0px 15px
+}
+.info img{
+    width: 100%;
+    height: 15em
+}
+  
+.info svg {
+    position: absolute;
+    right: -10px;
+    
+}
+  
+.info svg text {
+    fill: white;
+    font-weight: bold;
+}
+  
+.bottom{
+    min-width: 100%;
+    height: 7em;
+    display: flex;
+    align-self: end;
+   justify-self: start;
+}
+  
+.prices{
+    margin-top: -1px;
+    width: 100%;
+    background-color: white;
+    border-radius: 0px 0px 15px 15px
+}
+  
+.addCart{
+    position: relative;
+    width: 12em;
+    border: none;
+    background-color: transparent;
+}
+  
+.addCart::after{
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    width: 25px;
+    height: 50px;
+    top: 0px;
+    right: -1px;
+    border-top-right-radius: 15px;
+    box-shadow: 0px -15px 0 -0.3px white; 
+}
+.container-onsale{
+    display: grid;
+    width: 23em;
+    height: 27em;
+    color: yellow;
+}
+.info-onsale{
+    position: relative;
+    background-color: yellow;
+    padding: 1.5em;
+    border-radius: 15px 15px 0px 15px
+}
+.info-onsale img{
+    width: 100%;
+    height: 15em
+}
+  
+.info-onsale svg {
+    position: absolute;
+    right: -10px;
+    
+}
+  
+.info-onsale svg text {
+    fill: white;
+    font-weight: bold;
+}
+  
+.bottom-onsale{
+    min-width: 100%;
+    height: 7em;
+    display: flex;
+    align-self: end;
+   justify-self: start;
+}
+.prices-onsale{
+    margin-top: -1px;
+    width: 100%;
+    background-color: yellow;
+    border-radius: 0px 0px 15px 15px
+}
+  
+.addCart-onsale{
+    position: relative;
+    width: 12em;
+    border: none;
+    background-color: transparent;
+}
+  
+.addCart-onsale::after{
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    width: 25px;
+    height: 50px;
+    top: 0px;
+    right: -1px;
+    border-top-right-radius: 15px;
+    box-shadow: 0px -15px 0 -0.3px yellow; 
+}
