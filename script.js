@@ -204,8 +204,7 @@ function createFeaturedProduct(object){
     <div class="bottom">
         <button class="addCart"></button>
         <div class="prices">
-        <p class="listPrice"></p>
-        <p class="price">${object.price}</p>
+          <p class="price">$${object.price}</p>
         </div>
     </div>`
 }

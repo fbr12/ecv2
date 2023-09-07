@@ -68,9 +68,25 @@ h2{
     margin-top: -1px;
     width: 100%;
     background-color: white;
-    border-radius: 0px 0px 15px 15px
+    border-radius: 0px 0px 15px 15px;
 }
-  
+.featured .price{
+    color: #941B0C;
+    text-align: right;
+    font-family: Rubik;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    position: absolute; 
+    padding-left: 1.5em;
+}
+
+div.prices{
+    display: flex;
+    align-items: center;
+}
+
 .addCart{
     position: relative;
     width: 12em;
@@ -120,7 +136,7 @@ h2{
 h3{
     color: var(--black, #000);
     font-family: Rubik;
-    font-size: 20px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 500;
     line-height: 120%; 
@@ -218,4 +234,7 @@ div.info-new{
     padding-top: 3rem;
     display: flex;
     justify-self: start;
+}
+img{
+    border-radius: 10px;
 }
