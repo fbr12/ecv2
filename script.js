@@ -1,4 +1,6 @@
-/*
+/*////////////////////////////////////////////////////////Hardcoded Array code///////////////////////////////////////////////////////////////
+
+
 let array = [{
     productImg: 'oso.png',
     productName: 'Llave',
@@ -101,6 +103,10 @@ array.forEach((element)=>{
   //   }
   // }  
 
+
+//////////////////////////////////////////////////////////First Api Code/////////////////////////////////////////////////////////////////////
+
+
 /*async function getData(){;
   const apiResponse = await fetch("https://64f659ae2b07270f705e6753.mockapi.io/api/products")
   const jsonData = await apiResponse.json();
@@ -173,7 +179,9 @@ async function main() {
     console.error('Error en la función principal:', error);
   }
 }
-*/
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
 function descuento(object){
   const precio = object.price;
   const precioPrevio = object.previousPrice;
@@ -237,10 +245,10 @@ async function main() {
   try {
     const datos = await getData();
     datos.forEach(element => {
-      if(element.onSale!=true && element.featured){
+      if(!element.onSale && element.featured){
         createFeaturedProduct(element);
       }
-      else if(element.featured!=true && element.onSale){
+      else if(!element.featured && element.onSale){
         createOnSaleProduct(element);
       }
     });
