@@ -193,7 +193,7 @@ function createFeaturedProduct(object){
   const discount = descuento(object);
   const newDiv = document.createElement('div');
   newDiv.className = 'container'
-  const fDiv = document.querySelector('.featured');
+  const fDiv = document.querySelector('.featured-content');
   fDiv.appendChild(newDiv);
   newDiv.innerHTML = `
     <div class="info">
@@ -202,7 +202,35 @@ function createFeaturedProduct(object){
       <p>${object.id}</p>
     </div>
     <div class="bottom">
-        <button class="addCart"></button>
+        <div class="addCart">
+          <div class="basket">
+            <button>
+              <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="shopping-bag" clip-path="url(#clip0_101_136)">
+                <path id="Vector" d="M5.68572 1.63828L2.42857 5.97621V21.159C2.42857 21.7342 2.65735 22.2859 3.06457 22.6927C3.47179 23.0995 4.0241 23.328 4.6 23.328H19.8C20.3759 23.328 20.9282 23.0995 21.3354 22.6927C21.7427 22.2859 21.9714 21.7342 21.9714 21.159V5.97621L18.7143 1.63828H5.68572Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path id="Vector_2" d="M2.42857 5.97623H21.9714" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path id="Vector_3" d="M16.5429 10.3141C16.5429 11.4646 16.0853 12.568 15.2709 13.3815C14.4564 14.195 13.3518 14.6521 12.2 14.6521C11.0482 14.6521 9.94358 14.195 9.12913 13.3815C8.31469 12.568 7.85714 11.4646 7.85714 10.3141" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_101_136">
+                <rect width="22.8" height="25.2143" fill="white" transform="translate(0.800003 0.0115356)"/>
+                </clipPath>
+                </defs>
+              </svg>
+              <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="plus" clip-path="url(#clip0_101_140)">
+                <path id="Vector" d="M5.74286 1.68747V9.27887" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path id="Vector_2" d="M1.94287 5.48312H9.54287" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_101_140">
+                <rect width="11.4" height="10.5737" fill="white" transform="translate(0.0428619 0.331787)"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </div>
+        </div>
         <div class="prices">
           <p class="price">$${object.price}</p>
         </div>
@@ -212,7 +240,7 @@ function createOnSaleProduct(object){
   const discount = descuento(object);
   const newDiv = document.createElement('div');
   newDiv.className = 'container-onsale'
-  const fDiv = document.querySelector('.featured-onsale');
+  const fDiv = document.querySelector('.onsale-content');
   fDiv.appendChild(newDiv);
   newDiv.innerHTML = `
     <div class="info-onsale">
@@ -226,7 +254,35 @@ function createOnSaleProduct(object){
         <p>${object.id}</p>
     </div>
     <div class="bottom-onsale">
-      <button class="addCart-onsale"></button>
+      <div class="addCart-onsale">
+        <div class="basket">
+          <button>
+            <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="shopping-bag" clip-path="url(#clip0_101_136)">
+              <path id="Vector" d="M5.68572 1.63828L2.42857 5.97621V21.159C2.42857 21.7342 2.65735 22.2859 3.06457 22.6927C3.47179 23.0995 4.0241 23.328 4.6 23.328H19.8C20.3759 23.328 20.9282 23.0995 21.3354 22.6927C21.7427 22.2859 21.9714 21.7342 21.9714 21.159V5.97621L18.7143 1.63828H5.68572Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path id="Vector_2" d="M2.42857 5.97623H21.9714" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path id="Vector_3" d="M16.5429 10.3141C16.5429 11.4646 16.0853 12.568 15.2709 13.3815C14.4564 14.195 13.3518 14.6521 12.2 14.6521C11.0482 14.6521 9.94358 14.195 9.12913 13.3815C8.31469 12.568 7.85714 11.4646 7.85714 10.3141" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_101_136">
+              <rect width="22.8" height="25.2143" fill="white" transform="translate(0.800003 0.0115356)"/>
+              </clipPath>
+              </defs>
+            </svg>
+            <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="plus" clip-path="url(#clip0_101_140)">
+              <path id="Vector" d="M5.74286 1.68747V9.27887" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path id="Vector_2" d="M1.94287 5.48312H9.54287" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_101_140">
+              <rect width="11.4" height="10.5737" fill="white" transform="translate(0.0428619 0.331787)"/>
+              </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+      </div>
       <div class="prices-onsale">
         <p class="listPrice">$${object.price}</p>
         <p class="price">$${object.previousPrice}</p>
