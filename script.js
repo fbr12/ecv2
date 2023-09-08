@@ -305,6 +305,9 @@ async function main() {
       }
       else if(!element.featured && element.onSale){
         createOnSaleProduct(element);
+      }else if(element.featured && element.onSale){
+        createFeaturedProduct(element);
+        createOnSaleProduct(element);
       }
     });
   } catch (error) {
